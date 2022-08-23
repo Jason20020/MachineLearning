@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e7ae3fd6-238b-4c10-a980-c91f0e449d01</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>dataPreprocessing.py</StartupFile>
+    <StartupFile>SimpleLinearRegression.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="dataPreprocessing.py" />
     <Compile Include="MachineLearning.py" />
+    <Compile Include="SimpleLinearRegression.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
