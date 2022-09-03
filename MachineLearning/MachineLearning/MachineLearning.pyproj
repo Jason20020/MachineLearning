@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e7ae3fd6-238b-4c10-a980-c91f0e449d01</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>multipleLinearRegression.py</StartupFile>
+    <StartupFile>polynomialRegression.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,7 @@
     <Compile Include="dataPreprocessing.py" />
     <Compile Include="MachineLearning.py" />
     <Compile Include="multipleLinearRegression.py" />
+    <Compile Include="polynomialRegression.py" />
     <Compile Include="SimpleLinearRegression.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
