@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e7ae3fd6-238b-4c10-a980-c91f0e449d01</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>decissionTreeRegression.py</StartupFile>
+    <StartupFile>randomTreeRegression.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,7 @@
     <Compile Include="MachineLearning.py" />
     <Compile Include="multipleLinearRegression.py" />
     <Compile Include="polynomialRegression.py" />
+    <Compile Include="randomTreeRegression.py" />
     <Compile Include="SimpleLinearRegression.py" />
     <Compile Include="supportVectorRegression.py" />
   </ItemGroup>
