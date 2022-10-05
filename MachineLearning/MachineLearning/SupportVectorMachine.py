@@ -1,15 +1,7 @@
-# K-Nearest Neighbors (KNN)
-
-# STEP 1 : Choose the number K of neighbors
-
-# STEP 2 : Take the K nearest neighbors of the new data point, according to the Euclidean distance
-
-# STEP 3 : Among these K neighbors, count the number of data points in each category
-
-# STEP 4 : Assign the new data point to the category where you counted the most neighbors
-
+# Support Vector Machine
 
 # Importing the libraries
+from random import random
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -23,15 +15,15 @@ y = dataset.iloc[:, -1].values
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=0)
 
-# Feature Scalling
+# Feature Scaling
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 x_train = sc.fit_transform(x_train)
 x_test = sc.transform(x_test)
 
-#Training the K-NN model on the Training set
-from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
+# Training the SVM model on the Training set
+from sklearn.svm import SVC
+classifier = SVC(kernel="linear", random_state=0)
 classifier.fit(x_train, y_train)
 
 # Predicting a new result
@@ -45,7 +37,7 @@ print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),
 from sklearn.metrics import confusion_matrix, accuracy_score
 cm = confusion_matrix(y_test, y_pred)
 print(cm)
-print(accuracy_score(y_test, y_pred)) # 0.93
+print(accuracy_score(y_test, y_pred)) # 0.9
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap

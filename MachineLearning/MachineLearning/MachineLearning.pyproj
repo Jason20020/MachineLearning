@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e7ae3fd6-238b-4c10-a980-c91f0e449d01</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>K-NearestNeighbors.py</StartupFile>
+    <StartupFile>SupportVectorMachine.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,6 +31,7 @@
     <Compile Include="polynomialRegression.py" />
     <Compile Include="randomTreeRegression.py" />
     <Compile Include="SimpleLinearRegression.py" />
+    <Compile Include="SupportVectorMachine.py" />
     <Compile Include="supportVectorRegression.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
