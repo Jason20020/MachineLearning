@@ -1,6 +1,6 @@
-# Support Vector Machine
+# Kernel SVM
 
-# Importing the libraries
+# Importing Libraries
 from random import random
 import numpy as np
 import matplotlib.pyplot as plt
@@ -21,9 +21,9 @@ sc = StandardScaler()
 x_train = sc.fit_transform(x_train)
 x_test = sc.transform(x_test)
 
-# Training the SVM model on the Training set
+# Training the Kernel SVM model on the Training set
 from sklearn.svm import SVC
-classifier = SVC(kernel="linear", random_state=0)
+classifier = SVC(kernel = 'rbf', random_state = 0)
 classifier.fit(x_train, y_train)
 
 # Predicting a new result
@@ -50,7 +50,7 @@ plt.xlim(X1.min(), X1.max())
 plt.ylim(X2.min(), X2.max())
 for i, j in enumerate(np.unique(y_set)):
     plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1], c = ListedColormap(('red', 'green'))(i), label = j)
-plt.title('Support Vertor Machine (Training set)')
+plt.title('Kernel SVM (Training set)')
 plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
@@ -67,7 +67,7 @@ plt.xlim(X1.min(), X1.max())
 plt.ylim(X2.min(), X2.max())
 for i, j in enumerate(np.unique(y_set)):
     plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1], c = ListedColormap(('red', 'green'))(i), label = j)
-plt.title('Support Vertor Machine (Test set)')
+plt.title('Kernel SVM (Test set)')
 plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
