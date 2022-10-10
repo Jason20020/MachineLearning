@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e7ae3fd6-238b-4c10-a980-c91f0e449d01</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>kernelSVM.py</StartupFile>
+    <StartupFile>NaiveBayes.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,7 @@
     <Compile Include="MachineLearning.py" />
     <Compile Include="modelSelection.py" />
     <Compile Include="multipleLinearRegression.py" />
+    <Compile Include="NaiveBayes.py" />
     <Compile Include="polynomialRegression.py" />
     <Compile Include="randomTreeRegression.py" />
     <Compile Include="SimpleLinearRegression.py" />
